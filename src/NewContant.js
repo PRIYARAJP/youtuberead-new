@@ -33,7 +33,7 @@ const NewContant = ({items,seTit,handleCheck}) => {
 
 // })
   return (
-    <div>
+    <>
       {(items.length)?(
         <ul>
                <Listitem
@@ -42,7 +42,7 @@ const NewContant = ({items,seTit,handleCheck}) => {
                handleCheck={handleCheck}
                />
         </ul>):<p>The list is empty</p>}
-    </div>
+    </>
   )
 }
 

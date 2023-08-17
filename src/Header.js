@@ -1,15 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 // import Button from './Button'
 
 const Header = (props) => {
    const Headerer = () => {
     const names =[' List '," Item"]
-    
+    const API_URLONLINE="https://jsonplaceholder.typicode.com/photos";
+    const [apii,setapi]=useState(['HII','hello']);
+  fetch( API_URLONLINE)
+      .then(response => response.json())
+      .then(json => setapi(json))
+
     const int =Math.floor(Math.random()*2)
       return (
        <>
-       {/* {names} */}
-       {names[int]}
+        {apii}
+       {names[int] }
        </>
       )
     }
