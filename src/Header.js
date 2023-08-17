@@ -5,7 +5,7 @@ const Header = (props) => {
    const Headerer = () => {
     const names =[' List '," Item"]
     
-    const int =Math.floor(Math.random()*3)
+    const int =Math.floor(Math.random()*2)
       return (
        <>
        {/* {names} */}
@@ -18,8 +18,6 @@ const Header = (props) => {
     <div className='header'>   Welcome {props.tit}   <b>{Headerer()}</b>
       {/* <div>Header ctrl+alt+r select rafce for windows shift+com+r for mac</div> */}
    {/* <Button/> */}
-
- 
     </div>
   )
 }
